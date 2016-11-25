@@ -76,6 +76,7 @@ new BuildHtmlWebpackPlugin(options);
   config.entry.app.unshift("build-html-webpack-plugin/lib/client?http://localhost:8080/");
   var compiler = webpack(config);
   var server = new WebpackDevServer(compiler, {...});
+  compiler._server = server; // 一定要加这一句
   server.listen(8080);
   ```
 
