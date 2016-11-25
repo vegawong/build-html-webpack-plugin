@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "extends": "yidejia",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "__resourceQuery": true
+  },
+  "rules": {}
+}
